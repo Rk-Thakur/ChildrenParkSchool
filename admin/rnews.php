@@ -48,7 +48,7 @@ th{
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="home.html">
+        <a class="nav-link" href="home.php">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>HOMEPAGE</span></a>
       </li>

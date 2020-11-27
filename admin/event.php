@@ -200,6 +200,7 @@ th{
                       <th>Event Image</th>
                       <th>EVENT NAME</th>
                       <th>DATE</th>
+                      <th>DESCRIPTION</th>
                       <th>LOCATION</th>
                       <th>Edit</th>
                       <th>Delete</th>
@@ -222,6 +223,7 @@ th{
                   <td align="center"><?php echo '<img src="uploads/'. $row["file"].'"height= "100" width="100" alt=" ">'; ?></td>
                  <td align="center"><?php echo $row["name"]; ?></td>
                  <td align="center"><?php echo $row["date"]; ?></td>
+                 <td align="center"><?php echo $row["description"]; ?></td>
                  <td align="center"><?php echo $row["location"]; ?></td>
                   <td align="center"><a href="editevent.php?id=<?php echo$row["id"];?>"><i class="fas fa-user-edit"></i></a></td>
                 <td align="center"><a href="deleteevent.php?id=<?php echo $row["id"]; ?>"><i class="fas fa-trash"></i></a></td>
