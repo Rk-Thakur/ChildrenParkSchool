@@ -150,6 +150,7 @@ th{
       <div id="content">
         <!-- Topbar -->
         <?php
+        //include("security.php");
         include("search.php");
         ?>
         <!-- End of Topbar -->

@@ -8,14 +8,14 @@
                   include_once("config.php");
                   // create a query
                   //$sql="SELECT first,last,email,course,level,status FROM record";
-                  $sql="SELECT first,last,file FROM register ORDER BY id desc";
+                  $sql="SELECT username,file FROM register ORDER BY id desc";
                   //execute query
                   $result=mysqli_query($conn,$sql);
                   if($result){                 
                     while($row=mysqli_fetch_assoc($result)){?>
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $row["first"]; ?> <?php echo $row["last"]; ?></span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $row["username"]; ?> </span>
                                 <?php echo '<img src="uploads/'. $row["file"].'"class="img-profile rounded-circle">'; ?>
                             </a>
                             <?php

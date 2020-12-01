@@ -2,8 +2,7 @@
 include_once('config.php');
 if(isset($_POST['submit']))
 {
-$first=$_POST['first'];
-$last=$_POST['last'];
+$username=$_POST['username'];
 $email=$_POST['email'];
 $password=$_POST['password'];
 
@@ -13,7 +12,7 @@ $password=$_POST['password'];
 
     move_uploaded_file($temp_name,$path);
 
-$sql="INSERT into register(first,last,email,password,file) values('$first','$last','$email','$password','$file')";
+$sql="INSERT into register(username,email,password,file) values('$username','$email','$password','$file')";
 $result=mysqli_query($conn,$sql);
 if($result)
 {
